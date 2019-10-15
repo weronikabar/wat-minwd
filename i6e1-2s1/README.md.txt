@@ -14,15 +14,21 @@ http://www.joptimizer.com/ (strona obecnie nie działa)
 
 JOptimizer to biblioteka umożliwiająca rozwiązywanie ogólnych problemów optymalizacji takich jak linear programming, quadratic programming, semidefinite programming itp. 
 Przykładowe metody wykorzystane z powyższej biblioteki to LinearMultivariateRealFunction, czyli f(x) = q.x + r, OptimalizationRequest jako problem optymalizacyjny,
-JOptimizer służący do optymalizacji wypukłej.
 
+## Przykład użycia
 
+Wytypowaliśmy dwa zestawy liczb, które chcemy obstawić na najbliższym losowaniu lotto. Zależy nam na zminimalizowaniu kosztów losów przy jednoczesnym założeniu, że odpowiednio cena kupionych liczby obu losów będzie większa lub równa konkretnej wartości, nie chcemy bowiem schodzić poniżej konkretnej ilości.
+Y - rozwiązanie optymalne
+x1 oraz x2 to odpowiednio ilość kupionych szans na dany zestaw
+min(25x1+3x2)
+x1*5+x2*2>=10
+x1*2+x2*9>=11
+x1*1+x2*3>=6
 
 ## Kompilacja i uruchomienie
 
 Projekt załadować do InteliJ'a i uruchomić. 
 
 Oczekiwany rezultat:
-Length: 3
-X: 0	Y: 1200	Z: 600
-A =30000.0
+X1: 0	X2: 5
+Y =15.0
